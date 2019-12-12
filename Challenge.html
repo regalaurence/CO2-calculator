@@ -4,36 +4,41 @@
         <meta name="description" content="Free CO2 calculator">
         <meta name="keywords" content="CO2, CAR, BUS, TRAIN">
         <meta name="author" content="Laurence">
+        
+        <link rel="stylesheet" href="styles.css">
+
     </head>
     <body>
         <header>
-            <h1>
-                CO2 calculator
-            </h1>
-
+            <div id="pagetitle"><h1>CO2 Calculator</h1></div>
+                
         </header>
-        <main>
-            <div id="CO2form">
+
+        <main>    
+            <div id="CO2FORM">         
+                <p id="formintro"><em>How much did that trip contribute to global warming?</em></p>
                 <form id="km">
-                    <label for="numberkm">Km</label>
-                    <input type="text" id="numberkm">
+                    <label for="numberkm">KM</label>
+                    <input type="text" id="numberkm" placeholder="Enter amount of KM">
                     <select id="transport">
                         <option value="train">Train</option>
                         <option value="Car">Car</option>
                         <option value="Bus">Bus</option>
                     </select>
-                    <button>+</button>
+                    <button class="formbutton">+</button>
                 </form>
-                <p>45 km with bus (3375g)<br>
-                12 km with bus (900g)<br>
-                425 km with car (42500g)<br>
-                346 km with train (9688g)<br>
-                774 km with train (21672g)<br>
-                <p><b>Total emissions: 78135g</b></p>
-            </div>
+
+                <div class="answersCO2">45 km with bus (3375g)</div>
+                <div class="answersCO2">12 km with bus (900g)</div>
+                <div class="answersCO2">425 km with car (42500g)</div>
+                <div class="answersCO2">346 km with train (9688g)</div>
+                <div class="answersCO2">774 km with train (21672g)</div>
+                <div id="sumCO2"><b>Total emissions: 78135g</b></div>
+            </div>   
         </main>
+
         <footer>
-                <div> <img src="car.png" width="150px"></div>
+                <div> <img id="footerimg" src="car.png" width="150px"></div>
         </footer>
 
     </body>
